@@ -1,10 +1,16 @@
 FROM ubuntu:20.04
 
+# Expose port for mkdocs serve live html preview
+EXPOSE 8000
+
 # Needed to build image without user input
 ARG DEBIAN_FRONTEND=noninteractive
 
-# Evn var for mkdocs to enable/disable pdf export
+# Env var for mkdocs to enable/disable pdf export
 ENV ENABLE_PDF_EXPORT=0
+
+# Env var for mkdocs run mode
+ENV MKDOCS_MODE="build"
 
 # Update
 RUN apt-get update
