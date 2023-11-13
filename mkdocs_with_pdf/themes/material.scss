@@ -7,7 +7,6 @@
       .tabbed-content--wrap {
         display: inline-block;
         width: 100%;
-        margin-bottom: 0.25rem;
 
         // Hide radio buttons
         > input {
@@ -19,7 +18,7 @@
           padding: 0.2rem 2rem;
           margin: 0;
           font-weight: 600;
-          color: #666;
+          color: #17af95;
           border-radius: 3px 3px 0 0;
           border-bottom-color: transparent;
         }
@@ -49,7 +48,8 @@
     &>blockquote,
     &>mark,
     &>table,
-    &>p {
+    &>p,
+    &>code {
       margin-left: 0.7rem;
     }
     &>table.highlighttable {
@@ -80,9 +80,9 @@
       margin-top: 1.5rem;
     }
 
-    hr {
-      border-bottom: 1px dotted #999;
-    }
+    // hr {
+    //   border-bottom: 1px dotted #999;
+    // }
 
     .footnote {
       line-height: 1.1;
@@ -94,9 +94,9 @@
         padding: 0.5em 1.25rem 0.4em;
       }
 
-      td {
-        border-bottom: 1px solid #eee;
-      }
+      // td {
+      //   border-bottom: 1px solid #eee;
+      // }
     }
   }
 

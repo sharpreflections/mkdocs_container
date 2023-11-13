@@ -26,19 +26,20 @@ article#doc-cover {
 
     &.upper {
       flex: 1 1 auto;
-      max-height: 30vh;
+      max-height: 100vh;
 
       > .logo {
         width: 100%;
         height: 100%;
-        background-position: center bottom;
+        background-position: center top;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
       }
     }
 
     h1 {
-      font-size: 36pt;
+      color: black;
+      font-size: 24pt;
       line-height: 1.4;
     }
 

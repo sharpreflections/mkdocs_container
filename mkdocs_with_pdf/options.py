@@ -25,6 +25,7 @@ class Options(object):
         ('cover', config_options.Type(bool, default=True)),
         ('back_cover', config_options.Type(bool, default=False)),
         ('cover_title', config_options.Type(str, default=None)),
+        ('cover_version', config_options.Type(str, default=None)),
         ('cover_subtitle', config_options.Type(str, default=None)),
         ('cover_logo', config_options.Type(str, default=None)),
         ('custom_template_path',
@@ -70,6 +71,7 @@ class Options(object):
             self._cover_title = local_config['cover_title'] \
                 if local_config['cover_title'] else config['site_name']
             self._cover_subtitle = local_config['cover_subtitle']
+            self._cover_version = local_config['cover_version']
             self._cover_logo = local_config['cover_logo']
 
         # path to custom template 'cover.html' and custom scss 'styles.scss'
@@ -120,6 +122,10 @@ class Options(object):
     @property
     def cover_title(self) -> str:
         return self._cover_title
+    
+    @property
+    def cover_version(self) -> str:
+        return self._cover_version
 
     @property
     def cover_subtitle(self) -> str:

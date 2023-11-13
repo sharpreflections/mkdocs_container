@@ -1,22 +1,25 @@
 @page {
   size: a4 portrait;
-  margin: 25mm 10mm 25mm 10mm;
+  margin: 20mm 10mm 20mm 10mm;
   counter-increment: page;
   white-space: pre;
-  color: grey;
+  color: black;
+  border-top: 1px solid #17af95;
+  padding-top: 15px;
+  border-bottom: 1px solid black;
 
-  @top-right {
-    font-size: 7pt;
+  @top-left {
+    font-size: 10pt;
     content: string(chapter);
   }
 
-  @bottom-center {
-    font-size: 8pt;
-    content: '- 'counter(page)'/'counter(pages)' -';
+  @bottom-left {
+    font-size: 10pt;
+    content: counter(page)' of 'counter(pages);
   }
 
   @bottom-right {
-    font-size: 6pt;
+    font-size: 10pt;
     content: string(copyright);
   }
 }

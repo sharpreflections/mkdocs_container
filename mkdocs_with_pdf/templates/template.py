@@ -22,7 +22,7 @@ class Template(object):
     """ Pickups key-value from `mkdocs.yml` """
     __KEYS = [
         "author", "copyright",
-        "cover_title", "cover_subtitle", "cover_logo",
+        "cover_title", "cover_version", "cover_subtitle", "cover_logo",
 
         "site_url",
         "repo_url"

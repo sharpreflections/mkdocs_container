@@ -1,14 +1,10 @@
 article {
   h1 {
-    border-bottom: 2px solid #f00;
+    color: #17af95;
   }
 
   h2 {
-    border-bottom: 1px solid #f99;
-  }
-
-  h3 {
-    border-bottom: 0.5px solid #eee;
+    color: #17af95;
   }
 
   h4 {
@@ -23,6 +19,10 @@ article {
 
   h6 {
     font-size: 0.75rem !important;
+  }
+
+  img {
+    margin-top: 5px;
   }
 
   h1>.pdf-order,
