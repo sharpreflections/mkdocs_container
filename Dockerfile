@@ -40,8 +40,10 @@ RUN apt-get update && apt-get -y install google-chrome-stable
 ADD mkdocs_with_pdf /usr/local/lib/python3.10/dist-packages/mkdocs_with_pdf
 
 # Copy the build script and make it executable
-COPY build_script.sh /root/build_script.sh
-RUN chmod +x /root/build_script.sh
+RUN mkdir /workdir
+COPY build_script.sh /workdir/build_script.sh
+RUN chmod +x /workdir/build_script.sh
+WORKDIR /workdir
 
 # When the container starts, run the build script
-ENTRYPOINT [ "/bin/bash", "/root/build_script.sh" ]
+ENTRYPOINT [ "/bin/bash", "/workdir/build_script.sh" ]
