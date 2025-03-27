@@ -15,8 +15,7 @@ EOF
 }
 
 RUNTIME="docker"
-# IMAGE="quay.io/sharpreflections/mkdocs_container"
-IMAGE="51384a977c84"
+IMAGE="quay.io/sharpreflections/mkdocs_container"
 FILE=$PWD/mkdocs.yml
 
 # Check if script is run in same directory as mkdocs.yml
